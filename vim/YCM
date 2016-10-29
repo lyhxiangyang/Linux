@@ -1,0 +1,23 @@
+YCM的安装心得
+首先是利用vundle这个管理器将ycm下载，主要目地就是进入~/.vim/bundle/YouCompleteMe,编译intall.sh
+首先是
+sudo apt-get install cmake
+sudo apt-get install clang
+其次是
+apt-get install python-dev
+
+然后就是那个llvm+clang的包了，各个教程上都有
+
+将这个包解压到~/ycm_temp
+并且将解压的包改到llvm_root_dir
+
+然后在建立一个~/ycm_build
+在里面执行
+cmake -G “Unix Makefiles” -DPATH_TO_LLVM_ROOT=~/ycm_temp/llvm_root_dir . ~/.vim/bundle/YouCompleteMe/cpp make ycm_support_libs
+
+接下来去~/.vim/bundle/YouCompleteMe，执行
+./install.sh --clang-complete --system-libclang
+
+将.ycm……这个文件放到home目录下面，里面又东西要改。
+主要就是更改一下c++的头文件的位置，方便编译器能够找到
+
