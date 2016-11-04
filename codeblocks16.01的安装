@@ -1,0 +1,10 @@
+第一步：
+其实就是从官网上找到的
+sudo add-apt-repository ppa:damien-moore/codeblocks-stable
+第二步：
+sudo apt-get update
+第三步:
+sudo apt-get install codeblocks
+
+为了使得codeblocks自动补全，还需要下载：
+sudo apt-get install codeblocks-contrib
