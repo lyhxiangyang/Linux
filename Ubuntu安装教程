@@ -1,0 +1,13 @@
+一：
+安装苹果的图标等
+sudo add-apt-repository ppa:noobslab/macbuntu
+sudo apt-get update
+sudo apt-get install macbuntu-os-icons-lts-v7
+sudo apt-get install macbuntu-os-ithemes-lts-v7
+安装tweak tool
+sudo apt-get install unity-tweak-tool
+安装plank(注意将plank设置为开机启动)
+sudo apt-get install plank
+安装compiz管理器
+sudo apt-get install compizconfig-settings-manager
+sudo apt-get install compiz-plugins-extra 
