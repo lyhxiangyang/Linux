@@ -11,3 +11,5 @@ sudo apt-get install plank
 安装compiz管理器
 sudo apt-get install compizconfig-settings-manager
 sudo apt-get install compiz-plugins-extra 
+二：下载zsh
+sudo apt-get install zsh
