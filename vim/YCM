@@ -6,6 +6,7 @@ sudo apt-get install clang
 其次是
 apt-get install python-dev
 
+/*
 然后就是那个llvm+clang的包了，各个教程上都有
 
 将这个包解压到~/ycm_temp
@@ -14,6 +15,7 @@ apt-get install python-dev
 然后在建立一个~/ycm_build
 在里面执行
 cmake -G “Unix Makefiles” -DPATH_TO_LLVM_ROOT=~/ycm_temp/llvm_root_dir . ~/.vim/bundle/YouCompleteMe/cpp make ycm_support_libs
+*/
 
 接下来去~/.vim/bundle/YouCompleteMe，执行
 ./install.sh --clang-complete --system-libclang
